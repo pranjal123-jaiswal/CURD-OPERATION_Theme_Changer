@@ -14,18 +14,30 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--body_background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--body_color);;
+}
+.custom-navbar {
+  background-color: var(--navabar_background); /* Replace 'yourColor' with the desired background color */
+}
+.main_Backgroundcolor {
+  background-color: var(--mainBody_background);
+}
+.custom-name {
+  text-align: center; /* Center-align the text horizontally */
+  font-size: calc(10px + 2vmin);
+  color: var(--body_color);
 }
 
+
 .App-link {
-  color: #61dafb;
+  color: var(--link_color);
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +48,77 @@
     transform: rotate(360deg);
   }
 }
+
+.create-button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  background-color: blue;
+}
+
+.create-button-container a {
+  width: 100%;
+  text-align: center;
+  display: inline-block; /* Add this line */
+}
+
+
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the table horizontally */
+
+  /* Rounded corners and border */
+  border: 2px solid #ddd; /* Border width */
+  border-radius: 10px; /* Adjust the radius for rounded corners */
+
+  /* Styling for table header (th) */
+  th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+
+  /* Styling for table rows (td) */
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  /* Styling for table stripes */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* Styling for table hover effect */
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+
+  /* Styling for table buttons */
+  button {
+    padding: 5px 10px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Styling for spacing between buttons */
+  td button + button {
+    margin-left: 5px;
+  }
+}
+.table_head {
+  background-color: var(--table_head);
+}
+
+.table_body {
+  background-color: var(--table_Body);
+}
+
+
+
